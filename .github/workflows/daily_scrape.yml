@@ -1,0 +1,41 @@
+name: Daily Job Scrape
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # every day at 8:00 AM UTC
+  workflow_dispatch:        # also triggerable manually from the Actions tab
+
+permissions:
+  contents: write           # needed to push jobs_seen.json back to the repo
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scraper
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+        run: python scraper.py
+
+      - name: Commit updated jobs_seen.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add jobs_seen.json
+          git diff --staged --quiet || git commit -m "chore: update jobs_seen.json [skip ci]"
+          git push

@@ -1,0 +1,16 @@
+# Claude Code internals
+.claude/
+
+# Personal / local files — not meant for the public repo
+prompt.txt
+ralphanalysis.txt
+*.pdf
+old/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env

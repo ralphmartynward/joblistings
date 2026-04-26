@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Smappen",
+    "url": "https://www.smappen.fr/jobs/",
+    "parser": "smappen"
+  },
+  {
+    "name": "Ilek",
+    "url": "https://jobs.lever.co/ilek.fr",
+    "parser": "lever"
+  }
+]
