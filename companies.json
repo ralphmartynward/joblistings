@@ -58,5 +58,15 @@
     "name": "Le Drive Tout Nu",
     "url": "https://les-tout-nus.taleez.com",
     "parser": "taleez"
+  },
+  {
+    "name": "Enercoop Midi-Pyrénées",
+    "url": "https://recrutement.enercoop.fr/fr/enercoop",
+    "parser": "enercoop"
+  },
+  {
+    "name": "Citiz Occitanie",
+    "url": "https://occitanie.citiz.coop/recrutement/",
+    "parser": "citiz"
   }
 ]

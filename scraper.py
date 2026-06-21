@@ -145,6 +145,46 @@ def parse_aniti(company: dict) -> list[dict]:
     return jobs
 
 
+def parse_enercoop(company: dict) -> list[dict]:
+    """Enercoop — listing page is JS-rendered; scrape sitemap for job URLs then fetch each title from h1."""
+    r = _get("https://recrutement.enercoop.fr/sitemap.xml")
+    soup = BeautifulSoup(r.text, "xml")
+    job_urls = [loc.text for loc in soup.find_all("loc") if "/offres/" in loc.text]
+    jobs = []
+    for url in job_urls:
+        try:
+            time.sleep(REQUEST_DELAY)
+            detail = BeautifulSoup(_get(url).text, "html.parser")
+            h1 = detail.find("h1")
+            if h1:
+                title = h1.get_text(strip=True)
+                if title:
+                    jobs.append({"title": title, "url": url})
+        except Exception as exc:
+            log.warning("Enercoop job page error %s: %s", url, exc)
+    return jobs
+
+
+def parse_citiz(company: dict) -> list[dict]:
+    """Citiz Occitanie — WordPress /recrutement/ page; job listings are h3 > a links."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for h3 in soup.find_all("h3"):
+        a = h3.find("a", href=True)
+        if not a:
+            continue
+        href = a["href"]
+        if "/recrutement/" not in href or href.rstrip("/").endswith("/recrutement"):
+            continue
+        title = a.get_text(strip=True)
+        if title and href not in seen:
+            seen.add(href)
+            jobs.append({"title": title, "url": href})
+    return jobs
+
+
 def parse_taleez(company: dict) -> list[dict]:
     """Taleez job board — unauthenticated JSON API at {slug}.taleez.com/api/careez."""
     slug = company["url"].rstrip("/").split("//")[-1].split(".taleez.com")[0]
@@ -209,6 +249,8 @@ PARSERS: dict = {
     "ekitia": parse_ekitia,
     "makesense": parse_makesense,
     "taleez": parse_taleez,
+    "enercoop": parse_enercoop,
+    "citiz": parse_citiz,
 }
 
 
