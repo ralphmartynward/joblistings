@@ -8,5 +8,55 @@
     "name": "Ilek",
     "url": "https://jobs.lever.co/ilek.fr",
     "parser": "lever"
+  },
+  {
+    "name": "OpenAirlines",
+    "url": "https://www.welcometothejungle.com/fr/companies/openairlines/jobs",
+    "parser": "welcometothejungle"
+  },
+  {
+    "name": "ANITI",
+    "url": "https://aniti.univ-toulouse.fr/offres-demploi/",
+    "parser": "aniti"
+  },
+  {
+    "name": "Easymile",
+    "url": "https://apply.workable.com/easymile",
+    "parser": "workable"
+  },
+  {
+    "name": "Ekitia",
+    "url": "https://www.ekitia.fr/integrer-lequipe/",
+    "parser": "ekitia"
+  },
+  {
+    "name": "Hugging Face",
+    "url": "https://apply.workable.com/huggingface",
+    "parser": "workable"
+  },
+  {
+    "name": "Makesense",
+    "url": "https://www.welcometothejungle.com/fr/companies/makesense/jobs",
+    "parser": "welcometothejungle"
+  },
+  {
+    "name": "Makesense Jobs Toulouse",
+    "url": "https://jobs.makesense.org/fr/s/jobs/Toulouse--France",
+    "parser": "makesense"
+  },
+  {
+    "name": "La Mêlée",
+    "url": "https://lamelee.taleez.com",
+    "parser": "taleez"
+  },
+  {
+    "name": "vorteX-io",
+    "url": "https://rh-vortex-io.taleez.com",
+    "parser": "taleez"
+  },
+  {
+    "name": "Le Drive Tout Nu",
+    "url": "https://les-tout-nus.taleez.com",
+    "parser": "taleez"
   }
 ]

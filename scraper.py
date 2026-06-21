@@ -47,20 +47,21 @@ def save_json(path, data):
 # ---------------------------------------------------------------------------
 
 def parse_smappen(company: dict) -> list[dict]:
-    """Static WordPress-style jobs page. Each listing is <a href="/job/..."><h3>Title</h3>...</a>."""
+    """Static WordPress-style page. HTML5 parsers restructure <a><h3> into <h3><a>,
+    so we find all <a href='/job/'> and use their text content directly."""
     r = _get(company["url"])
-    soup = BeautifulSoup(r.text, "lxml")
+    soup = BeautifulSoup(r.text, "html.parser")
     jobs = []
+    seen: set[str] = set()
     for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if "/job/" not in href:
+        if "/job/" not in a["href"]:
             continue
-        h3 = a.find("h3")
-        if not h3:
+        title = a.get_text(strip=True)
+        if not title:  # skip image-only links (no text)
             continue
-        title = h3.get_text(strip=True)
-        url = urljoin("https://www.smappen.fr", href)
-        if title and url not in [j["url"] for j in jobs]:
+        url = urljoin("https://www.smappen.fr", a["href"])
+        if url not in seen:
+            seen.add(url)
             jobs.append({"title": title, "url": url})
     return jobs
 
@@ -90,18 +91,110 @@ def parse_greenhouse(company: dict) -> list[dict]:
 
 
 def parse_welcometothejungle(company: dict) -> list[dict]:
-    """Welcome to the Jungle — static HTML, jobs in <div data-testid='job-list-item'>."""
+    """WTTJ company jobs page. Finds all <a> whose href starts with this company's jobs path.
+    After HTML5 restructuring of <a><h3>, the title lives in the inner <a> — get_text() handles both."""
     r = _get(company["url"])
-    soup = BeautifulSoup(r.text, "lxml")
+    soup = BeautifulSoup(r.text, "html.parser")
+    base_path = company["url"].replace("https://www.welcometothejungle.com", "").rstrip("/")
     jobs = []
-    for item in soup.find_all(attrs={"data-testid": "job-list-item"}):
-        a = item.find("a", href=True)
+    seen: set[str] = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if not href.startswith(base_path + "/"):
+            continue
+        title = a.get_text(strip=True)
+        if not title:
+            continue
+        url = "https://www.welcometothejungle.com" + href
+        if url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
+
+
+def parse_workable(company: dict) -> list[dict]:
+    """Workable job board — uses the widget JSON API (no scraping needed)."""
+    slug = company["url"].rstrip("/").split("/")[-1]
+    api_url = f"https://apply.workable.com/api/v3/accounts/{slug}/jobs"
+    headers = {"User-Agent": USER_AGENT, "Content-Type": "application/json"}
+    payload = {"query": "", "location": [], "department": [], "worktype": [], "remote": []}
+    r = requests.post(api_url, json=payload, headers=headers, timeout=20)
+    r.raise_for_status()
+    return [
+        {"title": j["title"], "url": f"https://apply.workable.com/{slug}/j/{j['shortcode']}"}
+        for j in r.json().get("results", [])
+        if j.get("title") and j.get("shortcode")
+    ]
+
+
+def parse_aniti(company: dict) -> list[dict]:
+    """ANITI jobs page — each listing is <h5><a href='pdf-or-post'>Title</a></h5>."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for h5 in soup.find_all("h5"):
+        a = h5.find("a", href=True)
         if not a:
             continue
-        title_el = a.find(["h3", "h4", "span"])
-        title = title_el.get_text(strip=True) if title_el else a.get_text(strip=True)
-        url = urljoin("https://www.welcometothejungle.com", a["href"])
-        if title:
+        title = h5.get_text(strip=True)
+        url = a["href"]
+        if title and url and url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
+
+
+def parse_taleez(company: dict) -> list[dict]:
+    """Taleez job board — unauthenticated JSON API at {slug}.taleez.com/api/careez."""
+    slug = company["url"].rstrip("/").split("//")[-1].split(".taleez.com")[0]
+    r = _get(f"https://{slug}.taleez.com/api/careez")
+    return [
+        {"title": j["label"], "url": f"https://{slug}.taleez.com/jobs/{j['slug']}"}
+        for j in r.json().get("jobs", [])
+        if j.get("label") and j.get("slug")
+    ]
+
+
+def parse_makesense(company: dict) -> list[dict]:
+    """Makesense job board — server-rendered. Jobs are <a href='/fr/jobs/...'> with title in inner <h3>."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if not href.startswith("/fr/jobs/"):
+            continue
+        h3 = a.find("h3")
+        if not h3:
+            continue
+        title = h3.get_text(strip=True)
+        if not title:
+            continue
+        url = "https://jobs.makesense.org" + href.split("?")[0]
+        if url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
+
+
+def parse_ekitia(company: dict) -> list[dict]:
+    """Ekitia jobs page — job posts appear as links with 'offre' or 'recru' in the URL."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if not any(kw in href.lower() for kw in ("offre", "emploi", "recru", "poste")):
+            continue
+        title = a.get_text(strip=True)
+        if not title:
+            continue
+        url = urljoin("https://www.ekitia.fr", href)
+        if url not in seen:
+            seen.add(url)
             jobs.append({"title": title, "url": url})
     return jobs
 
@@ -111,6 +204,11 @@ PARSERS: dict = {
     "lever": parse_lever,
     "greenhouse": parse_greenhouse,
     "welcometothejungle": parse_welcometothejungle,
+    "workable": parse_workable,
+    "aniti": parse_aniti,
+    "ekitia": parse_ekitia,
+    "makesense": parse_makesense,
+    "taleez": parse_taleez,
 }
 
 
