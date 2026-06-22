@@ -5,9 +5,7 @@
   ],
   "Ilek": [
     "https://jobs.lever.co/ilek.fr/9e7077fc-e682-4f10-90d7-5538e2f9132d",
-    "https://jobs.lever.co/ilek.fr/e15cfa3c-ed42-4f25-9743-f91c80d43ef1",
     "https://jobs.lever.co/ilek.fr/632383a2-e56f-4c01-a271-d095bf4238ba",
-    "https://jobs.lever.co/ilek.fr/7b7da064-c087-409c-9c70-08b78c353e97",
     "https://jobs.lever.co/ilek.fr/853be5cd-77f6-46db-8bd1-247e3b5f2531",
     "https://jobs.lever.co/ilek.fr/954903b4-1b95-49d3-bbdd-579ed4ca1765"
   ],
@@ -15,7 +13,14 @@
   "ANITI": [
     "https://aniti.univ-toulouse.fr/wp-content/uploads/2025/10/Comue_recrute_juristeANITI_0.pdf"
   ],
-  "Easymile": [],
+  "Easymile": [
+    "https://www.welcometothejungle.com/en/companies/easymile/jobs/product-owner-cdi-toulouse_toulouse",
+    "https://www.welcometothejungle.com/en/companies/easymile/jobs/responsable-recrutement-formation-f-h-cdi-toulouse_toulouse",
+    "https://www.welcometothejungle.com/en/companies/easymile/jobs/r-d-localization-engineer-cdi-toulouse_toulouse",
+    "https://www.welcometothejungle.com/en/companies/easymile/jobs/technical-training-validation-engineer-cdi-toulouse_toulouse",
+    "https://www.welcometothejungle.com/en/companies/easymile/jobs/r-d-perception-engineer-cdi-toulouse_toulouse",
+    "https://www.welcometothejungle.com/en/companies/easymile/jobs/candidatures-spontanees"
+  ],
   "Ekitia": [
     "https://www.ekitia.fr/offre-de-services/"
   ],
@@ -73,5 +78,14 @@
     "https://les-tout-nus.taleez.com/jobs/magasinier-livreur-labege-les-tout-nus-cdi",
     "https://les-tout-nus.taleez.com/jobs/charge-e-de-mission-supply-chain-labege-les-tout-nus-cdi",
     "https://les-tout-nus.taleez.com/jobs/responsable-de-production-labege-les-tout-nus-cdi"
+  ],
+  "Enercoop Midi-Pyrénées": [
+    "https://recrutement.enercoop.fr/fr/offres/developpeureuse-commerciale-bureau-detudes-bac5b3",
+    "https://recrutement.enercoop.fr/fr/offres/chargee-de-vie-cooperative---contrat-dapprentissage-en-alternance-a97009",
+    "https://recrutement.enercoop.fr/fr/offres/commerciale-professionnels-grands-comptes-et-collectivites---cdd-35554d",
+    "https://recrutement.enercoop.fr/fr/offres/stage---assistant-administratif-et-financier--gestion-dactifs-enr---marseille-13-0c3f4a"
+  ],
+  "Citiz Occitanie": [
+    "https://occitanie.citiz.coop/recrutement/gestionnaire-de-flotte-automobile-h-f/"
   ]
 }
