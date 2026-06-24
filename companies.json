@@ -68,5 +68,10 @@
     "name": "Citiz Occitanie",
     "url": "https://occitanie.citiz.coop/recrutement/",
     "parser": "citiz"
+  },
+  {
+    "name": "beta.gouv",
+    "url": "https://www.welcometothejungle.com/fr/companies-v1/communaute-beta-gouv/jobs",
+    "parser": "welcometothejungle"
   }
 ]
