@@ -73,5 +73,10 @@
     "name": "beta.gouv",
     "url": "https://www.welcometothejungle.com/fr/companies-v1/communaute-beta-gouv/jobs",
     "parser": "welcometothejungle"
+  },
+  {
+    "name": "Haute-Garonne Numérique",
+    "url": "https://hautegaronnenumerique.fr/recrutement/",
+    "parser": "hautegaronnenumerique"
   }
 ]

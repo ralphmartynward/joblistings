@@ -142,6 +142,31 @@ def parse_aniti(company: dict) -> list[dict]:
     return jobs
 
 
+def parse_hautegaronnenumerique(company: dict) -> list[dict]:
+    """HGN recruitment page — no job container template; returns empty while no-jobs text is present.
+    When jobs appear, looks for <a> links in page content (structure unknown until first posting)."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    if "pas d" in soup.get_text() and "offres de recrutement" in soup.get_text():
+        return []
+    base_url = company["url"].rstrip("/")
+    jobs = []
+    seen: set[str] = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        title = a.get_text(strip=True)
+        if not title or len(title) < 10:
+            continue
+        url = urljoin(company["url"], href)
+        if url.rstrip("/") == base_url:
+            continue
+        if any(kw in href.lower() for kw in ("recrutement/", "offre", "emploi", "poste", ".pdf")):
+            if url not in seen:
+                seen.add(url)
+                jobs.append({"title": title, "url": url})
+    return jobs
+
+
 def parse_enercoop(company: dict) -> list[dict]:
     """Enercoop — listing page is JS-rendered; scrape sitemap for job URLs then fetch each title from h1."""
     r = _get("https://recrutement.enercoop.fr/sitemap.xml")
@@ -246,6 +271,7 @@ PARSERS: dict = {
     "ekitia": parse_ekitia,
     "makesense": parse_makesense,
     "taleez": parse_taleez,
+    "hautegaronnenumerique": parse_hautegaronnenumerique,
     "enercoop": parse_enercoop,
     "citiz": parse_citiz,
 }
