@@ -91,25 +91,22 @@ def parse_greenhouse(company: dict) -> list[dict]:
 
 
 def parse_welcometothejungle(company: dict) -> list[dict]:
-    """WTTJ company jobs page. Finds all <a> whose href starts with this company's jobs path.
-    After HTML5 restructuring of <a><h3>, the title lives in the inner <a> — get_text() handles both."""
-    r = _get(company["url"])
-    soup = BeautifulSoup(r.text, "html.parser")
-    base_path = company["url"].replace("https://www.welcometothejungle.com", "").rstrip("/")
-    jobs = []
-    seen: set[str] = set()
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if not href.startswith(base_path + "/"):
-            continue
-        title = a.get_text(strip=True)
-        if not title:
-            continue
-        url = "https://www.welcometothejungle.com" + href
-        if url not in seen:
-            seen.add(url)
-            jobs.append({"title": title, "url": url})
-    return jobs
+    """WTTJ — two-step public API (HTML page is JS-rendered/bot-blocked).
+    1. Resolve org slug → org reference via api.welcometothejungle.com
+    2. Fetch jobs via welcomekit.co embed API; build URL from job reference."""
+    import re as _re
+    slug = _re.search(r"/companies(?:-v1)?/([^/]+)", company["url"]).group(1)
+    ref_r = _get(f"https://api.welcometothejungle.com/api/v1/organizations/{slug}")
+    org_ref = ref_r.json()["organization"]["reference"]
+    jobs_r = _get(f"https://www.welcomekit.co/api/v1/embed?organization_reference={org_ref}")
+    return [
+        {
+            "title": j["name"],
+            "url": f"https://www.welcometothejungle.com/fr/companies-v1/{slug}/jobs/{j['reference']}",
+        }
+        for j in jobs_r.json().get("jobs", [])
+        if j.get("name") and j.get("reference")
+    ]
 
 
 def parse_workable(company: dict) -> list[dict]:
