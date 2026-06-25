@@ -78,5 +78,25 @@
     "name": "Haute-Garonne Numérique",
     "url": "https://hautegaronnenumerique.fr/recrutement/",
     "parser": "hautegaronnenumerique"
+  },
+  {
+    "name": "KAROS",
+    "url": "https://www.welcometothejungle.com/fr/companies/karos/jobs",
+    "parser": "welcometothejungle"
+  },
+  {
+    "name": "Driveco",
+    "url": "https://www.welcometothejungle.com/fr/companies/driveco/jobs",
+    "parser": "welcometothejungle"
+  },
+  {
+    "name": "VSB énergies nouvelles",
+    "url": "https://www.welcometothejungle.com/fr/companies/vsb-energies/jobs",
+    "parser": "welcometothejungle"
+  },
+  {
+    "name": "VOLTAÏCA",
+    "url": "https://www.welcometothejungle.com/fr/companies/voltaica-fr/jobs",
+    "parser": "welcometothejungle"
   }
 ]
