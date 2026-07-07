@@ -1,8 +1,5 @@
 {
-  "Smappen": [
-    "https://www.smappen.fr/job/rejoins-nous-en-tant-que-customer-success-manager-en-vie-a-montreal-au-canada/",
-    "https://www.smappen.fr/job/business-developer-offre-d-emploi/"
-  ],
+  "Smappen": [],
   "Ilek": [
     "https://jobs.lever.co/ilek.fr/9e7077fc-e682-4f10-90d7-5538e2f9132d",
     "https://jobs.lever.co/ilek.fr/632383a2-e56f-4c01-a271-d095bf4238ba",
@@ -11,10 +8,10 @@
     "https://jobs.lever.co/ilek.fr/954903b4-1b95-49d3-bbdd-579ed4ca1765"
   ],
   "OpenAirlines": [
+    "https://www.welcometothejungle.com/companies/openairlines/jobs/digital-marketing-manager-h-f_toulouse",
     "https://www.welcometothejungle.com/companies/openairlines/jobs/developpeur-full-stack-aviation-mobile-services-h-f_colmar",
     "https://www.welcometothejungle.com/companies/openairlines/jobs/developpeur-c-wpf-flight-animation-system-h-f_colmar",
-    "https://www.welcometothejungle.com/companies/openairlines/jobs/ingenieur-ia-generative-f-h_toulouse",
-    "https://www.welcometothejungle.com/companies/openairlines/jobs/digital-marketing-manager-h-f_toulouse"
+    "https://www.welcometothejungle.com/companies/openairlines/jobs/ingenieur-ia-generative-f-h_toulouse"
   ],
   "ANITI": [
     "https://aniti.univ-toulouse.fr/wp-content/uploads/2025/10/Comue_recrute_juristeANITI_0.pdf"
@@ -47,8 +44,9 @@
     "https://jobs.makesense.org/fr/jobs/zero-waste-toulouse-vsc-participer-a-la-mobilisation-citoyenne-pour-les-demarches-zdzg-intervention-WuA1QyBhDzdvak7RApXh",
     "https://jobs.makesense.org/fr/jobs/zero-waste-toulouse-vsc-participer-a-la-mobilisation-citoyenne-pour-les-demarches-zdzg-plaidoyer-cD7jgQXfx2SDYukqpKDG",
     "https://jobs.makesense.org/fr/jobs/zero-waste-toulouse-chargee-de-communication-partagee-hsB4jMvoKWd670tYbsxr",
-    "https://jobs.makesense.org/fr/jobs/cafe-joyeux-superviseur-salle-et-cuisine-hf-35hsemaine-toulouse-7JM9KCQeeC1ZfgwJNBSN",
     "https://jobs.makesense.org/fr/jobs/fondation-apprentis-dauteuil-infirmier-hf-bII8hFm5mNmqMG5COCuU",
+    "https://jobs.makesense.org/fr/jobs/fondation-apprentis-dauteuil-infirmier-hf-vDCprKnmepWAdGb9585p",
+    "https://jobs.makesense.org/fr/jobs/fondation-apprentis-dauteuil-auxiliaire-de-puericulture-hf-ZYiWtMWV2yeUqmK3mDcJ",
     "https://jobs.makesense.org/fr/jobs/fondation-apprentis-dauteuil-enseignant-en-francais-et-education-socio-culturelle-hf-3VAHP4YAE97dQD3kOSU4",
     "https://jobs.makesense.org/fr/jobs/emmaus-toulouse-activite-maraichere-alimentation-durable-et-vivre-ensemble-service-civique-QgGaTbuylF0niszeCLlf",
     "https://jobs.makesense.org/fr/jobs/la-croix-rouge-francaise-technicien-dintervention-durgence-sociale-fhx-dy0UaT04S7XJWn7d4MJH",
@@ -61,8 +59,7 @@
     "https://jobs.makesense.org/fr/jobs/phenix-developpeureuse-web-fullstack-senior-react-et-c-net-W8BWiyZqCXxCsbWk8RBu",
     "https://jobs.makesense.org/fr/jobs/les-halles-de-la-cartoucherie-scic-cosmopolis-directeurrice-marketing-communication-et-evenementiel-5hot7Mabsm6S565WRBv3",
     "https://jobs.makesense.org/fr/jobs/confederation-nationale-des-radios-associtatives-animateur-confederal-et-animateur-federal-emploi-partage-G3OA2zB3OcANkapAFzrc",
-    "https://jobs.makesense.org/fr/jobs/les-halles-de-la-transition-cheffe-de-cuisine-restaurant-la-cantine-des-halles-cdi-IUDkQK9r2s2IbQ7JxuYK",
-    "https://jobs.makesense.org/fr/jobs/lecole-comestible-appel-a-manifestation-dinteret-porter-le-projet-comestible-a-toulouse-3Wc3SpklGxOcwVL4biRK"
+    "https://jobs.makesense.org/fr/jobs/les-halles-de-la-transition-cheffe-de-cuisine-restaurant-la-cantine-des-halles-cdi-IUDkQK9r2s2IbQ7JxuYK"
   ],
   "La Mêlée": [
     "https://lamelee.taleez.com/jobs/sales-development-representative-saas-h-f-alternance-toulouse-taleez",
@@ -96,6 +93,7 @@
     "https://occitanie.citiz.coop/recrutement/gestionnaire-de-flotte-automobile-h-f/"
   ],
   "beta.gouv": [
+    "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/mission-data-analyst-dialog_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/developpeur-se-pour-la-ban-rnb_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/responsable-de-produits-numeriques-aide-juridictionnelle_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/charge-e-de-mission-accompagnement-du-changement_paris",
