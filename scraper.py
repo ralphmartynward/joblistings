@@ -213,11 +213,13 @@ def parse_citiz(company: dict) -> list[dict]:
 
 
 def parse_taleez(company: dict) -> list[dict]:
-    """Taleez job board — unauthenticated JSON API at {slug}.taleez.com/api/careez."""
+    """Taleez job board — unauthenticated JSON API at {slug}.taleez.com/api/careez.
+    Public apply links live at taleez.com/apply/{slug}, not {slug}.taleez.com/jobs/{slug}
+    (the latter 404s for applicants)."""
     slug = company["url"].rstrip("/").split("//")[-1].split(".taleez.com")[0]
     r = _get(f"https://{slug}.taleez.com/api/careez")
     return [
-        {"title": j["label"], "url": f"https://{slug}.taleez.com/jobs/{j['slug']}"}
+        {"title": j["label"], "url": f"https://taleez.com/apply/{j['slug']}"}
         for j in r.json().get("jobs", [])
         if j.get("label") and j.get("slug")
     ]
