@@ -13,10 +13,11 @@
   ],
   "Easymile": [
     "https://www.welcometothejungle.com/companies/easymile/jobs/product-owner-cdi-toulouse_toulouse",
-    "https://www.welcometothejungle.com/companies/easymile/jobs/r-d-localization-engineer-cdi-toulouse_toulouse",
     "https://www.welcometothejungle.com/companies/easymile/jobs/r-d-manager-cdi-toulouse_toulouse_EASYM_rbYa7Om"
   ],
-  "Ekitia": [],
+  "Ekitia": [
+    "https://www.ekitia.fr/offre-de-services/"
+  ],
   "Hugging Face": [
     "https://apply.workable.com/huggingface/j/002470F128",
     "https://apply.workable.com/huggingface/j/F4C096B22E",
@@ -30,7 +31,6 @@
   "Makesense Jobs Toulouse": [
     "https://jobs.makesense.org/fr/jobs/alter-conseil-consultante-experimentee-specialisee-ess-orientation-rh-occitanie-pvzXSMFtJaY423ZH5FOo",
     "https://jobs.makesense.org/fr/jobs/phenix-customer-operations-manager-gms-iVZCKrTO1fwVtH0p7XTa",
-    "https://jobs.makesense.org/fr/jobs/simplonco-responsable-du-developpement-commercial-1EK8of1KWmLjJ954mngb",
     "https://jobs.makesense.org/fr/jobs/terre-terre-epiciere-chez-terre-terre-cdi38h-1doXjhR0VvQDaZdE9Qqe",
     "https://jobs.makesense.org/fr/jobs/association-accompagnateur-rice-communautaire-en-sante-UqSDnKSrEAAsD0vNIs9A",
     "https://jobs.makesense.org/fr/jobs/la-solive-chargee-dadmission-lyontoulouselille-dnmHLbuOqsBS3dGEjNKs",
@@ -40,11 +40,12 @@
     "https://jobs.makesense.org/fr/jobs/la-croix-rouge-francaise-assistant-pedagogique-hfx-3YK8WlOQ8nBo0ymbXRUF",
     "https://jobs.makesense.org/fr/jobs/la-croix-rouge-francaise-assistant-pedagogique-hfx-GVmD5rlBGY35fpo5wACY",
     "https://jobs.makesense.org/fr/jobs/la-croix-rouge-francaise-contrat-alternance-comptable-fhx-gvMecvGrK5tDobd7Cucx",
+    "https://jobs.makesense.org/fr/jobs/ecocert-alternant-support-administratif-et-relation-client-hf-vXz52I229QKeujLd6JgP",
+    "https://jobs.makesense.org/fr/jobs/simplonco-responsable-du-developpement-commercial-1EK8of1KWmLjJ954mngb",
     "https://jobs.makesense.org/fr/jobs/france-active-chargee-daccompagnement-dla-GE4fTDHGYbp35MvlCq5K",
     "https://jobs.makesense.org/fr/jobs/france-active-chargee-de-communication-et-contenus-editoriaux-ff90Hwj6g0YLEaESW6O9",
     "https://jobs.makesense.org/fr/jobs/phenix-alternance-customer-operations-manager-com-gms-hf-89VQzs4y1dOlj4rNan1b",
     "https://jobs.makesense.org/fr/jobs/alveus-job-etudiant-responsable-pedagogique-a-toulouse-ugjjfjZfzhR6rROEhkxy",
-    "https://jobs.makesense.org/fr/jobs/association-la-cloche-stage-developpement-carillon-et-franchises-DWTmFD9FSJGd0CFG3daK",
     "https://jobs.makesense.org/fr/jobs/terre-de-liens-terre-de-liens-occitanie-recherche-sonsa-chargee-du-developpement-du-mecenat-Pz4ICqd18a5rMUaxxZKh",
     "https://jobs.makesense.org/fr/jobs/atmo-occitanie-chef-de-projet-ia-J5DCY1BAaXuhv4IPWDgG",
     "https://jobs.makesense.org/fr/jobs/marchepied-eclaireuses-eclaireurs-de-france-service-civique-inclusion-et-scoutisme-laique-f7IPdVdijawZWpoerdqa"
@@ -71,12 +72,14 @@
   ],
   "Enercoop Midi-Pyrénées": [
     "https://recrutement.enercoop.fr/fr/offres/developpeureuse-commerciale-bureau-detudes-bac5b3",
-    "https://recrutement.enercoop.fr/fr/offres/stage---bras-droit-du-responsable-commercial---bureaux-detudes-photovoltaique-b2e185",
+    "https://recrutement.enercoop.fr/fr/offres/stage---commerciale-prospection-bureaux-detudes-photovoltaique-b2e185",
     "https://recrutement.enercoop.fr/fr/offres/developpeureuse-commercial-clientele-professionnelle--entreprises-0f660e",
     "https://recrutement.enercoop.fr/fr/offres/chargee-de-developpement-commercial-en-alternance-8a4998",
     "https://recrutement.enercoop.fr/fr/offres/chargee-clientes-grands-comptes--collectivites-7dd78f",
     "https://recrutement.enercoop.fr/fr/offres/directeurrice-generale-adjointe--ventes--relations-clientes-72e657",
-    "https://recrutement.enercoop.fr/fr/offres/chargee-clientele-2513ca"
+    "https://recrutement.enercoop.fr/fr/offres/chargee-clientele-2513ca",
+    "https://recrutement.enercoop.fr/fr/offres/assistante--assistant-communication-en-alternance-cd5811",
+    "https://recrutement.enercoop.fr/fr/offres/chargee-de-gestion-dactifs-enr-paris-ou-montpellier-7eef62"
   ],
   "Citiz Occitanie": [
     "https://occitanie.citiz.coop/recrutement/gestionnaire-de-flotte-automobile-h-f/"
