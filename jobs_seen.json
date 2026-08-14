@@ -2,8 +2,6 @@
   "Smappen": [],
   "Ilek": [
     "https://jobs.lever.co/ilek.fr/9b105e9c-7e3d-452e-9783-438d46c21594",
-    "https://jobs.lever.co/ilek.fr/8e0ce2fd-45c2-44ed-8afe-95efd7ab5aa4",
-    "https://jobs.lever.co/ilek.fr/2619cac9-4255-4cc6-b446-dd0d265efa02",
     "https://jobs.lever.co/ilek.fr/88e2bf4f-4bf6-4709-af45-c787937b8328"
   ],
   "OpenAirlines": [
@@ -15,7 +13,9 @@
   "Easymile": [
     "https://www.welcometothejungle.com/companies/easymile/jobs/delivery-manager-cdi-toulouse_toulouse"
   ],
-  "Ekitia": [],
+  "Ekitia": [
+    "https://www.ekitia.fr/offre-de-services/"
+  ],
   "Hugging Face": [
     "https://apply.workable.com/huggingface/j/002470F128",
     "https://apply.workable.com/huggingface/j/F4C096B22E",
@@ -30,11 +30,13 @@
     "https://jobs.makesense.org/fr/jobs/solinum-assistante-communication-et-partenariats-gard-haute-garonne-herault-stage-ou-alternance-UUjW44dN2IkIVHhnYnYq",
     "https://jobs.makesense.org/fr/jobs/nomadock-contribue-a-sensibiliser-a-la-transition-ecologique-et-sociale-par-le-biais-de-cine-debats-qo7pIaO96fjpNHhYpvFV",
     "https://jobs.makesense.org/fr/jobs/nomadock-chargee-devenementiel-culturel-freelance-Sj5meH8EuJPKYu1C04jn",
+    "https://jobs.makesense.org/fr/jobs/la-maison-du-velo-chargee-daccueil-service-de-location-de-velo-XqzfrUi5MfrzzjVyBS3W",
     "https://jobs.makesense.org/fr/jobs/fondation-apprentis-dauteuil-educateur-scolaire-atelier-relais-hf-fKGST0lLOy9aawfTkE4P",
     "https://jobs.makesense.org/fr/jobs/la-croix-rouge-francaise-agent-de-service-plurivalent-fhx-iRZ8uZ0MxcUjBMivP7px",
     "https://jobs.makesense.org/fr/jobs/la-croix-rouge-francaise-assistant-regional-hf-SqaGHTu98gVPJ9v7lHw1",
-    "https://jobs.makesense.org/fr/jobs/la-croix-rouge-francaise-charge-de-mission-soutien-aux-delegations-fhx-kuGhHi2pE9aTS7HNLZoT",
+    "https://jobs.makesense.org/fr/jobs/fondation-apprentis-dauteuil-educateur-internat-hf-k7tQ0X6BwIoCjIVzRU5Z",
     "https://jobs.makesense.org/fr/jobs/fondation-apprentis-dauteuil-ouvrier-qualifie-hf-6eqbPrygRdMsFGBp0lse",
+    "https://jobs.makesense.org/fr/jobs/ecocert-responsable-conception-offre-de-durabilite-hf-LazZsR1k1kMlM9mfsaSA",
     "https://jobs.makesense.org/fr/jobs/la-croix-rouge-francaise-travailleur-social-diplome-esas-me-fhx-qXTQY3CwU98M4FKUzaKY",
     "https://jobs.makesense.org/fr/jobs/alter-conseil-consultante-experimentee-specialisee-ess-orientation-rh-occitanie-pvzXSMFtJaY423ZH5FOo",
     "https://jobs.makesense.org/fr/jobs/phenix-customer-operations-manager-gms-iVZCKrTO1fwVtH0p7XTa",
@@ -44,9 +46,7 @@
     "https://jobs.makesense.org/fr/jobs/phenix-alternance-customer-operations-manager-com-gms-hf-89VQzs4y1dOlj4rNan1b",
     "https://jobs.makesense.org/fr/jobs/terre-de-liens-terre-de-liens-occitanie-recherche-sonsa-chargee-du-developpement-du-mecenat-Pz4ICqd18a5rMUaxxZKh",
     "https://jobs.makesense.org/fr/jobs/atmo-occitanie-chef-de-projet-ia-J5DCY1BAaXuhv4IPWDgG",
-    "https://jobs.makesense.org/fr/jobs/hetwa-cdi-etudiant-business-developer-marketing-digital-et-developpement-commercial-0dSiohdKfkm7Amqz7JWr",
-    "https://jobs.makesense.org/fr/jobs/terre-terre-epiciere-chez-terre-terre-cdi38h-1doXjhR0VvQDaZdE9Qqe",
-    "https://jobs.makesense.org/fr/jobs/marchepied-eclaireuses-eclaireurs-de-france-service-civique-inclusion-et-scoutisme-laique-f7IPdVdijawZWpoerdqa"
+    "https://jobs.makesense.org/fr/jobs/hetwa-cdi-etudiant-business-developer-marketing-digital-et-developpement-commercial-0dSiohdKfkm7Amqz7JWr"
   ],
   "La Mêlée": [
     "https://taleez.com/apply/sales-development-representative-saas-h-f-alternance-toulouse-taleez",
