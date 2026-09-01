@@ -14,3 +14,6 @@ __pycache__/
 .venv/
 venv/
 .env
+
+# Windows Explorer folder customization junk
+desktop.ini

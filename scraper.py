@@ -268,6 +268,87 @@ def parse_ekitia(company: dict) -> list[dict]:
     return jobs
 
 
+def parse_cls(company: dict) -> list[dict]:
+    """CLS careers page — Softy ATS, server-rendered. Listings are
+    <div class="offre_emploi"><h3><span class="title"><a>Title</a>."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for div in soup.find_all("div", class_="offre_emploi"):
+        h3 = div.find("h3")
+        a = h3.find("a", href=True) if h3 else None
+        if not a:
+            continue
+        title = a.get_text(strip=True)
+        url = urljoin("https://www.cls.fr", a["href"])
+        if title and url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
+
+
+def parse_imajing(company: dict) -> list[dict]:
+    """Imajing careers page — Elementor icon-box list, no per-job links.
+    Titles are <h3 class="elementor-icon-box-title">; synthesize a stable
+    per-title URL fragment on the career page for dedup purposes."""
+    import re as _re
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    base_url = company["url"].rstrip("/")
+    for h3 in soup.find_all("h3", class_="elementor-icon-box-title"):
+        title = h3.get_text(" ", strip=True)
+        if not title:
+            continue
+        slug = _re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
+        url = f"{base_url}#{slug}"
+        if url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
+
+
+def parse_sensingai(company: dict) -> list[dict]:
+    """Sensing (Absolut Sensing) careers page — Elementor loop grid.
+    Each posting is <div class="e-loop-item"><h4>Title</h4>...<a href>.
+    Skip the evergreen 'Spontaneous application' entry."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for item in soup.find_all("div", class_="e-loop-item"):
+        h4 = item.find("h4")
+        a = item.find("a", href=True)
+        if not h4 or not a:
+            continue
+        title = h4.get_text(strip=True)
+        if not title or "spontaneous application" in title.lower():
+            continue
+        url = a["href"]
+        if url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
+
+
+def parse_welcomekit(company: dict) -> list[dict]:
+    """Standalone Welcomekit-hosted career site (WTTJ white-label, e.g. *.welcomekit.co).
+    Server-rendered; job links are <a class="jobs-list-item-link" href="/jobs/{slug}">."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for a in soup.find_all("a", class_="jobs-list-item-link", href=True):
+        title = a.get_text(" ", strip=True)
+        url = urljoin(company["url"], a["href"])
+        if title and url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
+
+
 PARSERS: dict = {
     "smappen": parse_smappen,
     "lever": parse_lever,
@@ -281,6 +362,10 @@ PARSERS: dict = {
     "hautegaronnenumerique": parse_hautegaronnenumerique,
     "enercoop": parse_enercoop,
     "citiz": parse_citiz,
+    "cls": parse_cls,
+    "imajing": parse_imajing,
+    "sensingai": parse_sensingai,
+    "welcomekit": parse_welcomekit,
 }
 
 

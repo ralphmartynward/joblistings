@@ -98,5 +98,25 @@
     "name": "VOLTAÏCA",
     "url": "https://www.welcometothejungle.com/fr/companies/voltaica-fr/jobs",
     "parser": "welcometothejungle"
+  },
+  {
+    "name": "CLS",
+    "url": "https://www.cls.fr/carrieres/offres-emploi/?contract=&city=toulouse",
+    "parser": "cls"
+  },
+  {
+    "name": "Imajing",
+    "url": "https://imajing.eu/company/career/",
+    "parser": "imajing"
+  },
+  {
+    "name": "Sensing (Absolut Sensing)",
+    "url": "https://sensing-ai.eu/careers/",
+    "parser": "sensingai"
+  },
+  {
+    "name": "Waltr",
+    "url": "https://waltr.welcomekit.co/",
+    "parser": "welcomekit"
   }
 ]
