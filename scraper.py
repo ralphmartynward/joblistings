@@ -11,7 +11,7 @@ import time
 from datetime import date
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -349,6 +349,18 @@ def parse_welcomekit(company: dict) -> list[dict]:
     return jobs
 
 
+def parse_teamtailor(company: dict) -> list[dict]:
+    """Teamtailor career site — public JSON Feed at /jobs.json on the career subdomain."""
+    parsed = urlparse(company["url"])
+    api_url = f"{parsed.scheme}://{parsed.netloc}/jobs.json"
+    r = _get(api_url)
+    return [
+        {"title": item["title"], "url": item["url"]}
+        for item in r.json().get("items", [])
+        if item.get("title") and item.get("url")
+    ]
+
+
 PARSERS: dict = {
     "smappen": parse_smappen,
     "lever": parse_lever,
@@ -366,6 +378,7 @@ PARSERS: dict = {
     "imajing": parse_imajing,
     "sensingai": parse_sensingai,
     "welcomekit": parse_welcomekit,
+    "teamtailor": parse_teamtailor,
 }
 
 

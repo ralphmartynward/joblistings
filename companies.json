@@ -118,5 +118,15 @@
     "name": "Waltr",
     "url": "https://waltr.welcomekit.co/",
     "parser": "welcomekit"
+  },
+  {
+    "name": "Delair",
+    "url": "https://delair.teamtailor.com/jobs",
+    "parser": "teamtailor"
+  },
+  {
+    "name": "Sensinov",
+    "url": "https://www.welcometothejungle.com/fr/companies/sensinov/jobs",
+    "parser": "welcometothejungle"
   }
 ]
