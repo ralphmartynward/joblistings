@@ -95,9 +95,13 @@ def parse_welcometothejungle(company: dict) -> list[dict]:
     1. Resolve org slug → org reference via api.welcometothejungle.com
     2. Fetch jobs via welcomekit.co embed API.
     Only jobs with 'wttj_fr' in cms_sites_references are live on WTTJ;
-    URL comes from websites_urls to avoid 404s from reference-based paths."""
+    URL comes from websites_urls to avoid 404s from reference-based paths.
+    Optional company["config"]["city"] filters to jobs whose office city
+    contains that string (case-insensitive) — for nationwide employers
+    (e.g. IGN) where only a specific city's postings are of interest."""
     import re as _re
     slug = _re.search(r"/companies(?:-v1)?/([^/]+)", company["url"]).group(1)
+    city_filter = company.get("config", {}).get("city", "").lower()
     ref_r = _get(f"https://api.welcometothejungle.com/api/v1/organizations/{slug}")
     org_ref = ref_r.json()["organization"]["reference"]
     jobs_r = _get(f"https://www.welcomekit.co/api/v1/embed?organization_reference={org_ref}")
@@ -105,6 +109,10 @@ def parse_welcometothejungle(company: dict) -> list[dict]:
     for j in jobs_r.json().get("jobs", []):
         if not j.get("name") or "wttj_fr" not in j.get("cms_sites_references", []):
             continue
+        if city_filter:
+            offices = j.get("offices") or []
+            if not any(city_filter in (o.get("city") or "").lower() for o in offices):
+                continue
         wttj_url = next(
             (w["url"] for w in j.get("websites_urls", []) if w.get("website_reference") == "wttj_fr"),
             None,

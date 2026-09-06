@@ -138,5 +138,13 @@
     "name": "Toulouse Métropole - Direction de la transition numérique",
     "url": "https://metropole.toulouse.fr/rejoindre-la-direction-de-la-transition-numerique",
     "parser": "toulousemetropole_dtn"
+  },
+  {
+    "name": "IGN",
+    "url": "https://www.welcometothejungle.com/fr/companies/ign/jobs",
+    "parser": "welcometothejungle",
+    "config": {
+      "city": "toulouse"
+    }
   }
 ]
