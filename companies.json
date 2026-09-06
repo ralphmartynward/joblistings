@@ -146,5 +146,10 @@
     "config": {
       "city": "toulouse"
     }
+  },
+  {
+    "name": "Shippingbo",
+    "url": "https://shippingbo.taleez.com",
+    "parser": "taleez"
   }
 ]
