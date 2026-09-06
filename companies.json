@@ -128,5 +128,15 @@
     "name": "Sensinov",
     "url": "https://www.welcometothejungle.com/fr/companies/sensinov/jobs",
     "parser": "welcometothejungle"
+  },
+  {
+    "name": "AUAT",
+    "url": "https://www.aua-toulouse.org/page/offres_demploi/",
+    "parser": "auat"
+  },
+  {
+    "name": "Toulouse Métropole - Direction de la transition numérique",
+    "url": "https://metropole.toulouse.fr/rejoindre-la-direction-de-la-transition-numerique",
+    "parser": "toulousemetropole_dtn"
   }
 ]

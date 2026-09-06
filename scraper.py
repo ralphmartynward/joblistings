@@ -349,6 +349,29 @@ def parse_welcomekit(company: dict) -> list[dict]:
     return jobs
 
 
+def parse_auat(company: dict) -> list[dict]:
+    """AUAT careers page — WordPress "offres_emploi" post type.
+    Each listing is <article class="tg-offres_emploi_horiz"><h2 class="tg-item-title"><a>Title</a>.
+    Skip the evergreen 'Candidature spontanée' entry."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for article in soup.find_all("article", class_="tg-offres_emploi_horiz"):
+        h2 = article.find("h2", class_="tg-item-title")
+        a = h2.find("a", href=True) if h2 else None
+        if not a:
+            continue
+        title = a.get_text(strip=True)
+        if not title or "candidature spontan" in title.lower():
+            continue
+        url = a["href"]
+        if url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
+
+
 def parse_teamtailor(company: dict) -> list[dict]:
     """Teamtailor career site — public JSON Feed at /jobs.json on the career subdomain."""
     parsed = urlparse(company["url"])
@@ -359,6 +382,28 @@ def parse_teamtailor(company: dict) -> list[dict]:
         for item in r.json().get("items", [])
         if item.get("title") and item.get("url")
     ]
+
+
+def parse_toulousemetropole_dtn(company: dict) -> list[dict]:
+    """Toulouse Métropole — Direction de la transition numérique landing page.
+    Listings are cards: <h3 class="list__card__title"><a href="/offres-emploi/...">Title</a>.
+    Excludes the catch-all "Voir toutes les offres" link (not inside a card title)."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for h3 in soup.find_all("h3", class_="list__card__title"):
+        a = h3.find("a", href=True)
+        if not a:
+            continue
+        title = a.get_text(strip=True)
+        if not title:
+            continue
+        url = urljoin("https://metropole.toulouse.fr", a["href"])
+        if url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
 
 
 PARSERS: dict = {
@@ -379,6 +424,8 @@ PARSERS: dict = {
     "sensingai": parse_sensingai,
     "welcomekit": parse_welcomekit,
     "teamtailor": parse_teamtailor,
+    "auat": parse_auat,
+    "toulousemetropole_dtn": parse_toulousemetropole_dtn,
 }
 
 
