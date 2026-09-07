@@ -151,5 +151,20 @@
     "name": "Shippingbo",
     "url": "https://shippingbo.taleez.com",
     "parser": "taleez"
+  },
+  {
+    "name": "Buybox",
+    "url": "https://www.buybox.net/en/jobs",
+    "parser": "buybox"
+  },
+  {
+    "name": "Axonaut",
+    "url": "https://www.welcometothejungle.com/fr/companies-v1/axonaut/jobs",
+    "parser": "welcometothejungle"
+  },
+  {
+    "name": "SOGEFI Ingénierie Géomatique",
+    "url": "https://www.sogefi-sig.com/lequipe/sogefi-recrute/",
+    "parser": "sogefi"
   }
 ]

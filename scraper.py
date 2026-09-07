@@ -414,6 +414,47 @@ def parse_toulousemetropole_dtn(company: dict) -> list[dict]:
     return jobs
 
 
+def parse_buybox(company: dict) -> list[dict]:
+    """Buybox careers page (Webflow) — postings link straight to PDF job sheets.
+    Each is <a class="roles_item-wrapper" href=".../*.pdf"><div class="text-size-regular">Title</div>."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for a in soup.find_all("a", class_="roles_item-wrapper", href=True):
+        title_el = a.find("div", class_="text-size-regular")
+        if not title_el:
+            continue
+        title = title_el.get_text(strip=True)
+        url = a["href"]
+        if title and url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
+
+
+def parse_sogefi(company: dict) -> list[dict]:
+    """SOGEFI Ingénierie Géomatique — WordPress/Elementor recruitment page.
+    Each posting is an <li> whose full text is "Title : Voir l'offre", with
+    the "Voir l'offre" link itself pointing at the offer page."""
+    r = _get(company["url"])
+    soup = BeautifulSoup(r.text, "html.parser")
+    jobs = []
+    seen: set[str] = set()
+    for li in soup.find_all("li"):
+        a = li.find("a", href=True)
+        if not a or "offre-demploi" not in a["href"].lower():
+            continue
+        url = a["href"]
+        full_text = li.get_text(" ", strip=True)
+        link_text = a.get_text(" ", strip=True)
+        title = full_text[: -len(link_text)].rstrip(" :").strip() if full_text.endswith(link_text) else full_text
+        if title and url not in seen:
+            seen.add(url)
+            jobs.append({"title": title, "url": url})
+    return jobs
+
+
 PARSERS: dict = {
     "smappen": parse_smappen,
     "lever": parse_lever,
@@ -434,6 +475,8 @@ PARSERS: dict = {
     "teamtailor": parse_teamtailor,
     "auat": parse_auat,
     "toulousemetropole_dtn": parse_toulousemetropole_dtn,
+    "buybox": parse_buybox,
+    "sogefi": parse_sogefi,
 }
 
 
