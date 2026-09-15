@@ -35,7 +35,6 @@
     "https://jobs.makesense.org/fr/jobs/hophopfood-occitanie-responsable-dantenne-toulouse-et-haute-garonne-ou-profil-commercial-ligF8no8GpODfjmM81Hc",
     "https://jobs.makesense.org/fr/jobs/hophopfood-national-responsable-dantenne-toulouse-et-haute-garonne-ou-profil-developpement-commercial-pEaO1ZKVvO349FT3Y1Nx",
     "https://jobs.makesense.org/fr/jobs/toulouse-espace-couture-animateurice-de-coworking-couturieriere-P9qHc5owTcnPLsMRePzc",
-    "https://jobs.makesense.org/fr/jobs/petits-fils-responsable-de-secteur-dans-les-services-a-la-personne-hf-9ish8ZlkNwU0AysTHMnI",
     "https://jobs.makesense.org/fr/jobs/proxite-mecenat-de-competences-longue-duree-appui-au-developpement-territorial-B1WxpvLeifbhN8wf7BNq",
     "https://jobs.makesense.org/fr/jobs/ecocert-data-engineer-hf-9artoeyBapb8ImJ1FWeY",
     "https://jobs.makesense.org/fr/jobs/la-croix-rouge-francaise-travailleur-social-diplome-esas-me-fhx-081YZg4PXU0Slgfi4NeQ",
@@ -50,6 +49,7 @@
     "https://jobs.makesense.org/fr/jobs/transmettre-candidature-spontanee-ZIxCNUB15AfpYx1N7Kv9",
     "https://jobs.makesense.org/fr/jobs/ecoactions-candidature-spontanee-Euo36opmzaHqnm6AwPIo",
     "https://jobs.makesense.org/fr/jobs/etyo-stage-ingenieur-travaux-gestion-de-projet-immobilier-conseil-et-amo-toulouse-fh-XFOAZ0oyExpTA8pWWFe5",
+    "https://jobs.makesense.org/fr/jobs/petits-fils-responsable-de-secteur-dans-les-services-a-la-personne-hf-9ish8ZlkNwU0AysTHMnI",
     "https://jobs.makesense.org/fr/jobs/r-emploi-sobra-candidature-spontanee-xFBwLhCTEppaUd2FlnXk"
   ],
   "La Mêlée": [
@@ -94,11 +94,11 @@
   ],
   "Haute-Garonne Numérique": [],
   "KAROS": [
+    "https://www.welcometothejungle.com/companies/karos/jobs/head-of-public-sector-sales-france-spain-w-m-nb_paris",
     "https://www.welcometothejungle.com/companies/karos/jobs/account-executive-paris-cdi-f-h_paris",
     "https://www.welcometothejungle.com/companies/karos/jobs/user-engagement-specialist-w-m-nb_paris",
     "https://www.welcometothejungle.com/companies/karos/jobs/fp-a-manager-paris-cdi-f-h_paris",
-    "https://www.welcometothejungle.com/companies/karos/jobs/animateur-rice-marketing",
-    "https://www.welcometothejungle.com/companies/karos/jobs/head-of-public-sector-sales-france-spain-w-m-nb_paris"
+    "https://www.welcometothejungle.com/companies/karos/jobs/animateur-rice-marketing"
   ],
   "Driveco": [
     "https://www.welcometothejungle.com/companies/driveco/jobs/stage-assistant-e-office-manager-f-m-x_paris",
@@ -107,12 +107,14 @@
     "https://www.welcometothejungle.com/companies/driveco/jobs/cdd-chef-de-projet-workplace-immobilier-f-m-x_paris"
   ],
   "VSB énergies nouvelles": [
+    "https://www.welcometothejungle.com/companies/vsb-energies/jobs/juriste-stage-apprentissage-nimes_nimes",
     "https://www.welcometothejungle.com/companies/vsb-energies/jobs/candidatures-spontanees-stage-alternance_nimes",
     "https://www.welcometothejungle.com/companies/vsb-energies/jobs/charge-de-territoire-eolien-h-f_nimes",
     "https://www.welcometothejungle.com/companies/vsb-energies/jobs/assistant-ingenieur-qualite-securite-environnement-h-f_rennes"
   ],
   "VOLTAÏCA": [],
   "CLS": [
+    "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=221470&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=220181&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=219994&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=219880&contract=&city=toulouse",
@@ -130,8 +132,7 @@
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=206969&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=204378&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=201577&contract=&city=toulouse",
-    "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=199163&contract=&city=toulouse",
-    "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=191828&contract=&city=toulouse"
+    "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=199163&contract=&city=toulouse"
   ],
   "Imajing": [
     "https://imajing.eu/company/career#ing-nieur-ia-vision-toulouse-france-cdi-cadre-40k-46k",
@@ -144,7 +145,6 @@
     "https://delair.teamtailor.com/jobs/8367931-telepilote-drone-responsable-formation-h-f",
     "https://delair.teamtailor.com/jobs/8341603-alternant-stagiaire-charge-de-projet-evenementiel-h-f-janvier-2027",
     "https://delair.teamtailor.com/jobs/8328006-ingenieur-developpement-de-systemes-autonomes-drones-h-f",
-    "https://delair.teamtailor.com/jobs/8145469-responsable-formation-h-f",
     "https://delair.teamtailor.com/jobs/8144898-chef-de-projet-crm-pipeline-h-f",
     "https://delair.teamtailor.com/jobs/8144453-product-owner-ivvq-drones-marins-et-sous-marins-h-f",
     "https://delair.teamtailor.com/jobs/8144212-trade-marketing-manager-h-f",
