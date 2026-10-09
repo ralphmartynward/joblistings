@@ -4,8 +4,7 @@
   "OpenAirlines": [
     "https://www.welcometothejungle.com/companies/openairlines/jobs/customer-success-manager-en-operations-aeriennes-f-h_toulouse_OPENA_jlpw4gr",
     "https://www.welcometothejungle.com/companies/openairlines/jobs/lead-product-manager-f-h_toulouse",
-    "https://www.welcometothejungle.com/companies/openairlines/jobs/aviation-data-scientist-f-h_toulouse_OPENA_a2k2p7O",
-    "https://www.welcometothejungle.com/companies/openairlines/jobs/assistant-de-gestion-office-manager-h-f_toulouse"
+    "https://www.welcometothejungle.com/companies/openairlines/jobs/aviation-data-scientist-f-h_toulouse_OPENA_a2k2p7O"
   ],
   "ANITI": [
     "https://aniti.univ-toulouse.fr/wp-content/uploads/2025/10/Comue_recrute_juristeANITI_0.pdf"
@@ -80,6 +79,7 @@
     "https://occitanie.citiz.coop/recrutement/gestionnaire-de-flotte-automobile-h-f/"
   ],
   "beta.gouv": [
+    "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/expert-e-low-code-grist-studio-low-code-dinum_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/chief-technology-officer_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/mission-lead-support-experience-utilisateurs_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/cdd-coach-gouvernance-partenariat_paris",
@@ -131,7 +131,9 @@
     "https://imajing.eu/company/career#visual-alignment-and-3d-pose-refinement-toulouse-france-6-months-lab-ge-near-toulouse-france-starting-february-march-2026",
     "https://imajing.eu/company/career#slam-on-smartphone-video-sequences-toulouse-france-6-months-lab-ge-near-toulouse-france-starting-february-march-2026"
   ],
-  "Sensing (Absolut Sensing)": [],
+  "Sensing (Absolut Sensing)": [
+    "https://sensing-ai.eu/en/mission-analysis-software-internship-w-m/"
+  ],
   "Waltr": [],
   "Delair": [
     "https://delair.teamtailor.com/jobs/8519155-stage-data-machine-learning-delair-data-platform-h-f",
