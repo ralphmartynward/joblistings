@@ -2,6 +2,7 @@
   "Smappen": [],
   "Ilek": [],
   "OpenAirlines": [
+    "https://www.welcometothejungle.com/companies/openairlines/jobs/customer-success-manager-en-operations-aeriennes-f-h_toulouse_OPENA_jlpw4gr",
     "https://www.welcometothejungle.com/companies/openairlines/jobs/lead-product-manager-f-h_toulouse",
     "https://www.welcometothejungle.com/companies/openairlines/jobs/aviation-data-scientist-f-h_toulouse_OPENA_a2k2p7O"
   ],
@@ -15,7 +16,6 @@
     "https://www.welcometothejungle.com/companies/easymile/jobs/v-v-engineer-cdi-francazal_toulouse",
     "https://www.welcometothejungle.com/companies/easymile/jobs/system-engineer-cdi-toulouse-f-m_toulouse",
     "https://www.welcometothejungle.com/companies/easymile/jobs/test-and-simulation-ezmove-tools-internship-toulouse_toulouse",
-    "https://www.welcometothejungle.com/companies/easymile/jobs/delivery-manager-embedded-software-cdi-toulouse-f-h_toulouse",
     "https://www.welcometothejungle.com/companies/easymile/jobs/improve-localization-monitoring-safety-function-internship-toulouse_toulouse",
     "https://www.welcometothejungle.com/companies/easymile/jobs/path-planning-and-control-of-a-pseudo-omnidirectional-wheeled-vehicle-internship-toulouse_toulouse",
     "https://www.welcometothejungle.com/companies/easymile/jobs/development-of-model-free-longitudinal-controllers-for-autonomous-vehicles-internship-toulouse_toulouse",
@@ -81,6 +81,8 @@
     "https://occitanie.citiz.coop/recrutement/gestionnaire-de-flotte-automobile-h-f/"
   ],
   "beta.gouv": [
+    "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/software-engineer-senior-api-d-immatriculation-unique-des-projets-freelance-novembre-2026_paris",
+    "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/data-engineer-senior-etl-d-un-referentiel-national-de-projets-freelance-novembre-2026_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/mission-charge-e-de-deploiement-support_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/mission-ingenieur-ia-deploye-fde_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/mission-developpeur-se-back-end-senior-octobre-2026",
@@ -92,6 +94,7 @@
   ],
   "Haute-Garonne Numérique": [],
   "KAROS": [
+    "https://www.welcometothejungle.com/companies/karos/jobs/customer-care-support-m-w-x_paris",
     "https://www.welcometothejungle.com/companies/karos/jobs/account-executive-paris-cdi-f-h_paris",
     "https://www.welcometothejungle.com/companies/karos/jobs/head-of-public-sector-sales-france-spain-w-m-nb_paris",
     "https://www.welcometothejungle.com/companies/karos/jobs/user-engagement-specialist-w-m-nb_paris"
@@ -111,6 +114,8 @@
   ],
   "VOLTAÏCA": [],
   "CLS": [
+    "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=225826&contract=&city=toulouse",
+    "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=225802&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=225642&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=225620&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=225388&contract=&city=toulouse",
@@ -144,6 +149,7 @@
     "https://delair.teamtailor.com/jobs/8540143-ingenieur-docteur-en-robotique-automatique-essaims-de-drones-h-f",
     "https://delair.teamtailor.com/jobs/8539956-ingenieur-docteur-ui-robotique-essaims-de-drones-h-f",
     "https://delair.teamtailor.com/jobs/8538962-responsable-produit-drones-sous-marins-et-solutions-digitales-h-f",
+    "https://delair.teamtailor.com/jobs/8537608-responsable-commercial-maritime-europe-du-nord-h-f",
     "https://delair.teamtailor.com/jobs/8519155-stage-data-machine-learning-delair-data-platform-h-f",
     "https://delair.teamtailor.com/jobs/8518748-stage-guidage-de-drones-a-voilure-fixe-essaims-de-drones-6-mois-pfe-h-f",
     "https://delair.teamtailor.com/jobs/8518623-stage-developpement-d-un-simulateur-multi-drones-6-mois-pfe-h-f",
@@ -152,10 +158,8 @@
     "https://delair.teamtailor.com/jobs/8390613-key-account-manager-for-security-and-defense-h-f",
     "https://delair.teamtailor.com/jobs/8367931-telepilote-drone-responsable-formation-h-f",
     "https://delair.teamtailor.com/jobs/8328006-ingenieur-developpement-de-systemes-autonomes-drones-h-f",
-    "https://delair.teamtailor.com/jobs/8144898-chef-de-projet-crm-pipeline-h-f",
     "https://delair.teamtailor.com/jobs/8144453-product-owner-ivvq-drones-marins-et-sous-marins-h-f",
     "https://delair.teamtailor.com/jobs/8023020-architecte-cybersecurite-produit-h-f",
-    "https://delair.teamtailor.com/jobs/7719001-operateur-de-production-composites-h-f",
     "https://delair.teamtailor.com/jobs/7515053-ingenieur-developpeur-fullstack-angular-rust-h-f",
     "https://delair.teamtailor.com/jobs/7165090-telepilote-operation-h-f",
     "https://delair.teamtailor.com/jobs/6536679-ingenieur-devops-h-f",
@@ -163,9 +167,7 @@
     "https://delair.teamtailor.com/jobs/2901946-operateur-ajusteur-monteur-h-f"
   ],
   "Sensinov": [],
-  "AUAT": [
-    "https://www.aua-toulouse.org/responsable-de-pole-mobilites-f-h/"
-  ],
+  "AUAT": [],
   "Toulouse Métropole - Direction de la transition numérique": [
     "https://metropole.toulouse.fr/offres-emploi/un-administrateur-ou-administratrice-des-applications-metier"
   ],
