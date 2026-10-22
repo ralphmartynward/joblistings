@@ -38,11 +38,11 @@
   "Makesense Jobs Toulouse": [
     "https://jobs.makesense.org/fr/jobs/terre-de-liens-une-chargee-de-mission-liberalites-fondation-terre-de-liens-HfqerhRKx5EhK1OIsDMo",
     "https://jobs.makesense.org/fr/jobs/pousses-o-abris-mediateurrice-sociale-jardin-et-biodiversite-contrat-adulte-relais-WcpAYyJer68l0ilarPC9",
-    "https://jobs.makesense.org/fr/jobs/caissalim-accompagner-et-favoriser-la-vie-democratique-dun-projet-alimentaire-durable-la-caissalim-pLa52SiEUqycyF11FYXn",
     "https://jobs.makesense.org/fr/jobs/ecocert-data-engineer-hf-9artoeyBapb8ImJ1FWeY",
     "https://jobs.makesense.org/fr/jobs/petits-fils-responsable-de-secteur-dans-les-services-a-la-personne-hf-twZVHUpaFhS2moQBzcbu",
     "https://jobs.makesense.org/fr/jobs/fondation-apprentis-dauteuil-charge-de-mission-hf-5Hf6Kq90LUdkYtVukQM3",
     "https://jobs.makesense.org/fr/jobs/fondation-cgenial-stage-chargee-de-projet-ecole-entreprise-sud-ouest-7xH39tE0zeb9XAb0EwN2",
+    "https://jobs.makesense.org/fr/jobs/caissalim-accompagner-et-favoriser-la-vie-democratique-dun-projet-alimentaire-durable-la-caissalim-pLa52SiEUqycyF11FYXn",
     "https://jobs.makesense.org/fr/jobs/gtk-chargee-de-contenu-communication-et-marketing-FKJcnIb2tTkZOsw39hyf",
     "https://jobs.makesense.org/fr/jobs/tls-geothermics-stage-en-direction-administrative-et-financiere-tls-geothermics-hf-UooJKv7SlUo97ZCTHVlm",
     "https://jobs.makesense.org/fr/jobs/sigilence-technologies-administrateur-systemes-sysops-fh-gR6bRIWd7KiY7PaA4paL",
@@ -114,6 +114,8 @@
   ],
   "VOLTAÏCA": [],
   "CLS": [
+    "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=225844&contract=&city=toulouse",
+    "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=225838&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=225826&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=225802&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=225642&contract=&city=toulouse",
@@ -142,6 +144,7 @@
   ],
   "Waltr": [],
   "Delair": [
+    "https://delair.teamtailor.com/jobs/8586192-ingenieur-developpement-logiciel-radio-et-telecommunications-h-f",
     "https://delair.teamtailor.com/jobs/8563087-stage-ingenieur-banc-de-test-caracterisation-optronique-h-f",
     "https://delair.teamtailor.com/jobs/8562035-stage-ingenieur-developpement-logiciel-embarque-emulateur-charge-utile-h-f",
     "https://delair.teamtailor.com/jobs/8553720-hrbp-h-f",
@@ -167,7 +170,9 @@
     "https://delair.teamtailor.com/jobs/2901946-operateur-ajusteur-monteur-h-f"
   ],
   "Sensinov": [],
-  "AUAT": [],
+  "AUAT": [
+    "https://www.aua-toulouse.org/responsable-de-pole-mobilites-f-h/"
+  ],
   "Toulouse Métropole - Direction de la transition numérique": [
     "https://metropole.toulouse.fr/offres-emploi/un-administrateur-ou-administratrice-des-applications-metier"
   ],
