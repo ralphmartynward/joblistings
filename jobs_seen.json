@@ -36,8 +36,8 @@
   ],
   "Makesense": [],
   "Makesense Jobs Toulouse": [
-    "https://jobs.makesense.org/fr/jobs/solaal-occitanie-chargee-des-dons-agricoles-60aacn1rmlxUGEXE1uVr",
     "https://jobs.makesense.org/fr/jobs/terre-de-liens-une-chargee-de-mission-liberalites-fondation-terre-de-liens-HfqerhRKx5EhK1OIsDMo",
+    "https://jobs.makesense.org/fr/jobs/solaal-occitanie-chargee-des-dons-agricoles-60aacn1rmlxUGEXE1uVr",
     "https://jobs.makesense.org/fr/jobs/pousses-o-abris-mediateurrice-sociale-jardin-et-biodiversite-contrat-adulte-relais-WcpAYyJer68l0ilarPC9",
     "https://jobs.makesense.org/fr/jobs/caissalim-accompagner-et-favoriser-la-vie-democratique-dun-projet-alimentaire-durable-la-caissalim-pLa52SiEUqycyF11FYXn",
     "https://jobs.makesense.org/fr/jobs/gtk-chargee-de-contenu-communication-et-marketing-FKJcnIb2tTkZOsw39hyf",
@@ -54,8 +54,8 @@
     "https://jobs.makesense.org/fr/jobs/ecoactions-candidature-spontanee-Euo36opmzaHqnm6AwPIo",
     "https://jobs.makesense.org/fr/jobs/r-emploi-sobra-candidature-spontanee-xFBwLhCTEppaUd2FlnXk",
     "https://jobs.makesense.org/fr/jobs/proxite-mecenat-de-competences-longue-duree-appui-au-developpement-territorial-B1WxpvLeifbhN8wf7BNq",
-    "https://jobs.makesense.org/fr/jobs/pole-ess-des-herbes-folles-encadrant-technique-dans-un-restaurant-dinsertion-FVn6FUUecjwzAh3Jmy8B",
-    "https://jobs.makesense.org/fr/jobs/association-espoir-faciliter-lacces-au-logement-des-plus-demunis-par-leconomie-circulaire-VZk8rroTpULHGKpgvrKu"
+    "https://jobs.makesense.org/fr/jobs/association-espoir-faciliter-lacces-au-logement-des-plus-demunis-par-leconomie-circulaire-VZk8rroTpULHGKpgvrKu",
+    "https://jobs.makesense.org/fr/jobs/ivvandi-candidature-spontanee-5AMyljbeCXNXLXw7aZMn"
   ],
   "La Mêlée": [],
   "vorteX-io": [
@@ -81,8 +81,8 @@
     "https://occitanie.citiz.coop/recrutement/gestionnaire-de-flotte-automobile-h-f/"
   ],
   "beta.gouv": [
-    "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/mission-product-designer-partageons-l-eau_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/customer-success-manager-rdv",
+    "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/mission-product-designer-partageons-l-eau_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/charge-e-de-deploiement-senior-pour-mon-suivi-social",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/chief-technology-officer_paris",
     "https://www.welcometothejungle.com/companies/communaute-beta-gouv/jobs/cdd-coach-gouvernance-partenariat_paris",
@@ -111,6 +111,7 @@
   ],
   "VOLTAÏCA": [],
   "CLS": [
+    "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=226517&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=226077&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=226073&contract=&city=toulouse",
     "https://www.cls.fr/carrieres/offres-emploi/offre/?offre_id=226071&contract=&city=toulouse",
@@ -144,6 +145,7 @@
   ],
   "Waltr": [],
   "Delair": [
+    "https://delair.teamtailor.com/jobs/8634954-responsable-commercial-maritime-asie-h-f",
     "https://delair.teamtailor.com/jobs/8586192-ingenieur-developpement-logiciel-radio-et-telecommunications-h-f",
     "https://delair.teamtailor.com/jobs/8563087-stage-ingenieur-banc-de-test-caracterisation-optronique-h-f",
     "https://delair.teamtailor.com/jobs/8562035-stage-ingenieur-developpement-logiciel-embarque-emulateur-charge-utile-h-f",
@@ -155,9 +157,7 @@
     "https://delair.teamtailor.com/jobs/8537608-responsable-commercial-maritime-europe-du-nord-h-f",
     "https://delair.teamtailor.com/jobs/8519155-stage-data-machine-learning-delair-data-platform-h-f",
     "https://delair.teamtailor.com/jobs/8518623-stage-developpement-d-un-simulateur-multi-drones-6-mois-pfe-h-f",
-    "https://delair.teamtailor.com/jobs/8515625-pilote-rov-technicien-sav-h-f",
     "https://delair.teamtailor.com/jobs/8390613-key-account-manager-for-security-and-defense-h-f",
-    "https://delair.teamtailor.com/jobs/8367931-telepilote-drone-responsable-formation-h-f",
     "https://delair.teamtailor.com/jobs/8328006-ingenieur-developpement-de-systemes-autonomes-drones-h-f",
     "https://delair.teamtailor.com/jobs/8023020-architecte-cybersecurite-produit-h-f",
     "https://delair.teamtailor.com/jobs/7515053-ingenieur-developpeur-fullstack-angular-rust-h-f",
@@ -167,7 +167,9 @@
     "https://delair.teamtailor.com/jobs/2901946-operateur-ajusteur-monteur-h-f"
   ],
   "Sensinov": [],
-  "AUAT": [],
+  "AUAT": [
+    "https://www.aua-toulouse.org/responsable-de-pole-mobilites-f-h/"
+  ],
   "Toulouse Métropole - Direction de la transition numérique": [
     "https://metropole.toulouse.fr/offres-emploi/un-ou-une-responsable-doffre-de-service-mobilite",
     "https://metropole.toulouse.fr/offres-emploi/un-administrateur-ou-administratrice-des-applications-metier"
