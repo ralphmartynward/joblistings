@@ -2,7 +2,7 @@
   "Smappen": [],
   "Ilek": [],
   "OpenAirlines": [
-    "https://www.welcometothejungle.com/companies/openairlines/jobs/alternance-analyste-cybersecurite-secops-ia-f-h_toulouse",
+    "https://www.welcometothejungle.com/companies/openairlines/jobs/platform-engineer-sre-devops-f-h_toulouse",
     "https://www.welcometothejungle.com/companies/openairlines/jobs/stage-data-mapping-outils-internes-professional-services-f-h_toulouse",
     "https://www.welcometothejungle.com/companies/openairlines/jobs/stage-aviation-data-scientist-f-h_toulouse_OPENA_aqLD9x6",
     "https://www.welcometothejungle.com/companies/openairlines/jobs/aviation-data-scientist-f-h_toulouse_OPENA_a2k2p7O"
@@ -11,12 +11,13 @@
     "https://aniti.univ-toulouse.fr/wp-content/uploads/2025/10/Comue_recrute_juristeANITI_0.pdf"
   ],
   "Easymile": [
+    "https://www.welcometothejungle.com/companies/easymile/jobs/employee-augmentation-ai-agents-intern-toulouse_toulouse",
+    "https://www.welcometothejungle.com/companies/easymile/jobs/improve-localization-monitoring-safety-function-internship-toulouse_toulouse",
     "https://www.welcometothejungle.com/companies/easymile/jobs/rdos-engineer-cdi-toulouse_toulouse",
     "https://www.welcometothejungle.com/companies/easymile/jobs/system-engineer-cdi-toulouse-f-m_toulouse",
     "https://www.welcometothejungle.com/companies/easymile/jobs/integration-support-engineer-cdi-francazal_toulouse",
     "https://www.welcometothejungle.com/companies/easymile/jobs/embedded-software-engineer-cdi-toulouse-f-m_toulouse",
-    "https://www.welcometothejungle.com/companies/easymile/jobs/v-v-engineer-cdi-francazal_toulouse",
-    "https://www.welcometothejungle.com/companies/easymile/jobs/improve-localization-monitoring-safety-function-internship-toulouse_toulouse"
+    "https://www.welcometothejungle.com/companies/easymile/jobs/v-v-engineer-cdi-francazal_toulouse"
   ],
   "Ekitia": [
     "https://www.ekitia.fr/offre-de-services/"
@@ -28,7 +29,6 @@
     "https://apply.workable.com/huggingface/j/D6D882F48F",
     "https://apply.workable.com/huggingface/j/DB4D7C0EC8",
     "https://apply.workable.com/huggingface/j/F88446C814",
-    "https://apply.workable.com/huggingface/j/9E2A4C02C7",
     "https://apply.workable.com/huggingface/j/19A136F8E2",
     "https://apply.workable.com/huggingface/j/81B46579FE",
     "https://apply.workable.com/huggingface/j/0BD8C06DB3"
@@ -39,12 +39,13 @@
     "https://jobs.makesense.org/fr/jobs/solinum-agente-de-collecte-de-donnees-occitanie-ZY9ES3kJ3d9jPONC3u2n",
     "https://jobs.makesense.org/fr/jobs/reseau-compost-citoyen-directeurice-IKFJtimp8Ugpv7wIJ59R",
     "https://jobs.makesense.org/fr/jobs/reseau-compost-citoyen-occitanie-rcco-assistante-communication-et-sensibilisation-cShpfrrLS7EYSFA1sWzn",
-    "https://jobs.makesense.org/fr/jobs/ostalada-animateurtricecoordinateurtrice-de-vie-sociale-et-partagee-hf-en-habitat-inclusif-seniors-DTRW1kV21TtZ6l2JrGM4",
+    "https://jobs.makesense.org/fr/jobs/cafe-joyeux-cdd-superviseur-salle-et-cuisine-hf-10hsem-toulouse-KndaeTwOb9n4H4RhctI1",
     "https://jobs.makesense.org/fr/jobs/cafe-joyeux-cdd-superviseur-salle-et-cuisine-hf-10hsem-toulouse-QoTDdWi3xcbRNUrBPPv7",
     "https://jobs.makesense.org/fr/jobs/fondation-apprentis-dauteuil-chef-de-projet-collecte-hf-GR8yemc8EM3YPCQZssqe",
     "https://jobs.makesense.org/fr/jobs/fondation-apprentis-dauteuil-gestionnaire-de-tresorerie-hf-ao7y9px5c0IiEdUMdhqK",
     "https://jobs.makesense.org/fr/jobs/solenciel-formateur-ou-formatrice-fle-j7ZhMVYZb6Qo6PlB5UFw",
     "https://jobs.makesense.org/fr/jobs/terre-de-liens-une-chargee-de-mission-liberalites-fondation-terre-de-liens-HfqerhRKx5EhK1OIsDMo",
+    "https://jobs.makesense.org/fr/jobs/ostalada-animateurtricecoordinateurtrice-de-vie-sociale-et-partagee-hf-en-habitat-inclusif-seniors-DTRW1kV21TtZ6l2JrGM4",
     "https://jobs.makesense.org/fr/jobs/la-foret-des-lucioles-construire-les-alternatives-pour-demain-service-civique-rKcWTDST6pWmludikYEa",
     "https://jobs.makesense.org/fr/jobs/greenburo-agente-administratifve-et-back-office-eNr99K9EHH0922B2fypT",
     "https://jobs.makesense.org/fr/jobs/hetwa-stagiaire-ingenieure-ou-master-en-hydrologie-environnement-et-sig-teledetection-OtcBd4VgnxUI12Qwm8aB",
@@ -53,8 +54,7 @@
     "https://jobs.makesense.org/fr/jobs/caissalim-accompagner-et-favoriser-la-vie-democratique-dun-projet-alimentaire-durable-la-caissalim-pLa52SiEUqycyF11FYXn",
     "https://jobs.makesense.org/fr/jobs/toulouse-metropole-direction-du-cycle-de-leau-stage-projet-pilote-pour-analyser-la-depollution-des-eaux-pluviales-par-les-sols-oQqcvg6BeLINwRhQE94d",
     "https://jobs.makesense.org/fr/jobs/les-mots-justes-enseignante-benevole-de-francais-pour-des-refugies-mineurs-6xhzdfgyKHz4GTV1XVjl",
-    "https://jobs.makesense.org/fr/jobs/les-mots-justes-candidature-spontanee-ClS2dzIhPmIn5G58B3tt",
-    "https://jobs.makesense.org/fr/jobs/ethikis-ad-civis-candidature-spontanee-tL2F8eXXxNxjkB2WdlYr"
+    "https://jobs.makesense.org/fr/jobs/les-mots-justes-candidature-spontanee-ClS2dzIhPmIn5G58B3tt"
   ],
   "La Mêlée": [],
   "vorteX-io": [],
@@ -87,6 +87,7 @@
     "https://www.welcometothejungle.com/companies/karos/jobs/account-executive-paris-cdi-f-h_paris"
   ],
   "Driveco": [
+    "https://www.welcometothejungle.com/companies/driveco/jobs/stage-charge-e-marketing-mobilite-electrique-f-m-x_paris",
     "https://www.welcometothejungle.com/companies/driveco/jobs/business-analyst-internship-belgium-f-m-x_bruxelles",
     "https://www.welcometothejungle.com/companies/driveco/jobs/internship-sales-development-representative-sdr-flanders-f-m-x_bruxelles",
     "https://www.welcometothejungle.com/companies/driveco/jobs/stage-network-development-f-m-x-paris_paris"
@@ -135,6 +136,8 @@
   "Sensing (Absolut Sensing)": [],
   "Waltr": [],
   "Delair": [
+    "https://delair.teamtailor.com/jobs/8799261-ingenieur-logiciel-backend-systeme-station-sol-c-rust-h-f",
+    "https://delair.teamtailor.com/jobs/8798647-tech-lead-developpement-embarque-middleware-robotique-h-f",
     "https://delair.teamtailor.com/jobs/8787636-telepilote-d-essais-h-f",
     "https://delair.teamtailor.com/jobs/8781962-tech-lead-developpeur-fullstack-station-sol-h-f",
     "https://delair.teamtailor.com/jobs/8779413-ingenieur-d-essais-en-vol-dt-46-h-f",
